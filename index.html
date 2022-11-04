@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter | Javascript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container col-12">
+        <div class="main col-6">
+            <div class="col-12 title">
+                <h2>Distance Converter</h2>
+            </div>
+
+                <form action="#" method="">
+                <div class="col-12 unitsdiv">
+                    <input type="number" id="num" placeholder="Enter a number">
+                    
+                    <select name="choice1" id="choice1">
+                        <option value="" selected disabled>Choose unit to convert</option>
+                        <option value="mt">Meter</option>
+                        <option value="km">Kilometer</option>
+                        <option value="cm">Centimeter</option>
+                        <option value="mm">Millimeter</option>
+                        <option value="mcm">Micrometer</option>
+                        <option value="nm">Nanometer</option>
+                        <option value="mi">Mile</option>
+                        <option value="yd">Yard</option>
+                    </select>
+
+                    <select name="choice2" id="choice2">
+                        <option value="" selected disabled>Convert to</option>
+                        <option value="mt">Meter</option>
+                        <option value="km">Kilometer</option>
+                        <option value="cm">Centimeter</option>
+                        <option value="mm">Millimeter</option>
+                        <option value="mcm">Micrometer</option>
+                        <option value="nm">Nanometer</option>
+                        <option value="mi">Mile</option>
+                        <option value="yd">Yard</option>
+                    </select>
+                </div>
+
+                <div class="col-12 btndiv">
+                    <button onClick="convert()">Convert Now</button>
+                </div>
+                </form>
+
+            <div class="col-12 answer">
+                <h3 id="answer"></h3>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
